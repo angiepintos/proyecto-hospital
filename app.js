@@ -12,7 +12,7 @@ const correo = document.getElementById("correo");
 const edad = document.getElementById("edad");
 //llamado de formulario
 const formulariomedicos = document.getElementById("registro-medico-form");
-const formulariopacientes = document.getElementById("Registro-paciente-form");
+const formulariopacientes = document.getElementById("registro-paciente-form");
 
 class Usuario{
     constructor(nombres,apellidos,cedula,telefono,especialidad){
@@ -24,7 +24,7 @@ class Usuario{
             }
 }
 
-const mostrarMedicos = function () {
+const mostrarmedicos = function () {
     let medicos = [];
     let cuerpotabla = document.getElementById("cuerpo-tabla-medicos");
     let localMedicos = localStorage.getItem("medicos");
@@ -56,7 +56,7 @@ const mostrarMedicos = function () {
     });    
 };
 
-const mostrarPacientes = function (){
+const mostrarpacientes = function (){
     let pacientes =[];
     let cuerpotabla = document.getElementById("cuerpo-tabla-pacientes")
     let localPacientes = localStorage.getItem("pacientes");
@@ -89,10 +89,10 @@ const mostrarPacientes = function (){
 
 // unicamente ejecuta la funcion cuando estamos ubicados en listado-medicos.html
 if (window.location.href.endsWith("listado-medico.html")){
-    mostrarMedicos();
+    mostrarmedicos();
 }
 if (window.location.href.endsWith("listado-paciente.html")) {
-    mostrarPacientes();
+    mostrarpacientes();
 }
 
 //unicamente ejecuta el addeventlisterner cuando estamos ubicados en el registros-medicos.html
