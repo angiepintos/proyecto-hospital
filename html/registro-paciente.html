@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro paciente</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Centro Médico Salud y Vida</h1>
+    </header>
+    <main>
+        <h2>Registro paciente</h2>
+        <div class="container-form">
+            <form id="Registro-paciente-form">
+                <label for="Nombres">Nombres:</label>
+                <input type="text" id="nombres" name="Nombres" required>
+                <label for="Apellidos"> Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="cedula"> Cedula:</label>
+                <input type="number" id="cedula" name="cedula" required>
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" required>
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono"required>
+                <label for="especialidad">Especialidad requerida:</label>
+                <select name="especialidad" id="especialidad" required>
+                    <option value="">Seleccione</option>
+                    <option value="Medicina general">Medicina general</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Medicina interna">Medicina interna</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Rehabilitación física">Rehabilitación fisica</option>
+                    <option value="Psicología">Psicología</option>
+                    <option value="Odontología">Odontología</option>
+                    <option value="Radiología">Radiología</option>
+                </select>
+                <input type="submit" value="enviar">
+            </form>
+            <a href="../index.html"><input type="button" value="volver"></a>        
+        </div> 
+    </main>
+    <footer> 
+        <h2>Elaborado por:</h2>
+        <p>ANGIE PINTO</p>
+        <p>Contacto 3227438819, Bogota D,C.</p>
+    </footer>
+    <script src="../app.js"></script>
+</body>
+</html>
