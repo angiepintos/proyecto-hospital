@@ -24,7 +24,7 @@ class Usuario{
             }
 }
 
-const mostrarmedicos = function () {
+const mostrarMedicos = function () {
     let medicos = [];
     let cuerpotabla = document.getElementById("cuerpo-tabla-medicos");
     let localMedicos = localStorage.getItem("medicos");
@@ -56,7 +56,7 @@ const mostrarmedicos = function () {
     });    
 };
 
-const mostrarpacientes = function (){
+const mostrarPacientes = function (){
     let pacientes =[];
     let cuerpotabla = document.getElementById("cuerpo-tabla-pacientes")
     let localPacientes = localStorage.getItem("pacientes");
@@ -89,10 +89,10 @@ const mostrarpacientes = function (){
 
 // unicamente ejecuta la funcion cuando estamos ubicados en listado-medicos.html
 if (window.location.href.endsWith("listado-medico.html")){
-    mostrarmedicos();
+    mostrarMedicos();
 }
 if (window.location.href.endsWith("listado-paciente.html")) {
-    mostrarpacientes();
+    mostrarPacientes();
 }
 
 //unicamente ejecuta el addeventlisterner cuando estamos ubicados en el registros-medicos.html
